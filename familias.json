@@ -14,6 +14,7 @@
             "ft.pro.crrt-id.id.sec": ["R$200", "R$250", "R$200", "R$150", "R$500", "R$450", "R$300"],
             "ft.pro.crrt-id.jor": ["R$600", "R$250", "R$200", "R$150", "R$500", "R$450", "R$300"],
             "ft.pro.crrt-id.jor.sec": ["R$7000", "R$250", "R$200", "R$150", "R$500", "R$450", "R$300"]
-        }
+        },
+        "infoModal": "/familias/ft.pro.crrt-id/info.png"
     }
 ]

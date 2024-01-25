@@ -12,7 +12,7 @@ function loadProductsFromJson() {
             // LEMBRETE: Desativei a organização pois estava atrapalhando na pesquisa
             // data.sort((a, b) => a.nome.localeCompare(b.nome));
             products = data.map(product => {
-                console.log("Produto encontrado: " + product.nome);
+                console.log("Familía de produto encontrada: " + product.nome);
                 return createProductCard(product);
             });
         });
@@ -139,7 +139,11 @@ function createProductModal(product) {
                                 ${productsSegments}
                             </table>
                         </div>
-
+                        
+                        <div>
+                            <h5 class="mt-3">Informações Técnicas</h5> 
+                            <img class="img-fluid border border-1" src="${product.infoModal}" >
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-qblue" data-bs-dismiss="modal">Fechar</button>
