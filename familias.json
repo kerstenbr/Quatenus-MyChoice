@@ -1,0 +1,19 @@
+[
+    {
+        "nome": "Fleet Pro Engate com ID de Carreta",
+        "apelido": "ft.pro.crrt-id",
+        "desc": "Essa familia de produto é destinada a carretas que necessitam de identificação com o cavalo",
+        "img": "/familias/ft.pro.crrt-id/capa.png",
+        "descModal": "Eu sou uma descrição mais longa e detalhada dessa familia de produtos. Eu sou uma descrição mais longa e detalhada dessa familia de produtos. Eu sou uma descrição mais longa e detalhada dessa familia de produtos. Eu sou uma descrição mais longa e detalhada dessa familia de produtos. Eu sou uma descrição mais longa e detalhada dessa familia de produtos.",
+        "canvaModal": "/familias/ft.pro.crrt-id/canva.png",
+        "prodSimModal": {
+            "ft.pro.crrt-id": "R$ 5.000",
+            "ft.pro.crrt-id.sec": "R$ 7.000",
+            "ft.pro.crrt-id.id": "R$ 1.000",
+            "ft.pro.crrt-id.id.imb-cs": "R$ 500",
+            "ft.pro.crrt-id.id.sec": "R$ 100",
+            "ft.pro.crrt-id.jor": "R$ 10.000",
+            "ft.pro.crrt-id.jor.sec": "R$ 4.000"
+        }
+    }
+]

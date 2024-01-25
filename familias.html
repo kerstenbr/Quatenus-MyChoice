@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <script src="js/searchbar.js" defer></script>
+
+    <!-- Bootstrap v5.3.2 -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <script src="js/bootstrap/bootstrap.js"></script>
+
+    <title>Quatenus MyChoice</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="navbar qorange shadow-sm">
+      <div class="container justify-content-center">
+        <a href="#" class="navbar-brand p-0">
+          <strong class="quatenusFont">MyChoice</strong>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main page -->
+  <main>
+    <div class="album py-5 bg-light">
+      <div class="container">
+        
+        <!-- Search bar -->
+        <div class="input">
+            <div class="form-outline mb-3">
+                <input type="search" id="form1" class="form-control" placeholder="Pesquise aqui" aria-label="Search" data-search/>
+            </div>
+        </div>
+
+        <!-- Error div -->
+        <div class="col-12 hide" id="errorWarning">
+          <div class="alert alert-danger p-5 rounded shadow">
+            <i class="bi bi-x-circle-fill"></i> <strong>Erro</strong>
+            <hr>
+            <div class="fs-1 ">
+              Nenhum produto encontrado.
+              <p class="fw-light">Acha que deveria ter algo aqui? Entre em contato com o Projetos e Inovações.</p>
+            </div>
+            <div class="text-end">
+              <a href="https://qbm01.quatenus-system.com.br/quatenus10/QBM/Default.aspx?Language=pt-BR#:~:text=Opera%C3%A7%C3%B5es%20%3A%3A%20Tickets" target="_blank" rel="noopener noreferrer">Clique aqui para abrir um ticket</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Template Card -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" data-products-cards-container>
+          <template data-products-template>
+
+            <!-- Card -->
+            <div class="col">
+              <div class="card shadow-sm" style="height: 450px;" id="card">
+                <a data-img-link target=”_blank” rel="noopener noreferrer">
+                  <img class="card-img-top" width="100%" height="225" id="card-img" data-img>
+                </a>
+  
+                <div class="card-body">
+                  <h3 data-name></h3>
+                  <p class="card-text" data-desc></p>
+                </div>
+
+                <div class="ms-3 mb-3">
+                  <button type="button" class="btn btn-sm btn-qblue" data-unique-name="${produto.nome}" data-btn-ver-mais>Ver mais</button>
+                </div>
+              </div>
+            </div>
+            
+          </template>
+        </div>
+
+      </div>
+    </div>        
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-muted py-5" id="footer">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Voltar ao Início</a>
+      </p>
+      <p class="mb-1">&copy; Quatenus MyChoice</p>
+      <p class="float-end mb-1">
+        <a href="https://qbm01.quatenus-system.com.br/quatenus10/QBM/Default.aspx?Language=pt-BR#:~:text=Opera%C3%A7%C3%B5es%20%3A%3A%20Tickets" target="_blank" rel="noopener noreferrer">Reporte um bug</a>
+      </p>
+      <p class="mb-0">Criado por <a href="https://kerstenbr.github.io/SitePei/" target="_blank" rel="noopener noreferrer"”>Projetos e Inovações</a>.</p>
+      <p>v0.0.1 - Em testes</p>
+    </div>
+  </footer>
+
+</body>
+</html>
