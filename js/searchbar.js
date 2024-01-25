@@ -60,7 +60,7 @@ function createProductCard(product) {
 
     btn.addEventListener("click", () => {
         const modalNameId = btn.getAttribute("data-unique-name");
-        console.log("Modal Aberto: ", modalNameId);
+        console.log("Modal Aberto:", modalNameId);
         createProductModal(product);
     });
 
