@@ -111,7 +111,7 @@ function createProductModal(product) {
                             <img class="img-fluid border border-1" src="${product.canvaModal}">
                         </div>
                         <div>
-                            <h5 class="mt-3">Segmentos de Produtos</h5>
+                            <h5 class="mt-4">Segmentos de Produtos</h5>
                         </div>
 
                         <div class="table-responsive">
@@ -139,7 +139,7 @@ function createProductModal(product) {
                                 ${productsSegments}
                             </table>
                         </div>
-                        
+
                         <div>
                             <h5 class="mt-3">Informações Técnicas</h5> 
                             <img class="img-fluid border border-1" src="${product.infoModal}" >
