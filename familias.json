@@ -7,13 +7,13 @@
         "descModal": "Eu sou uma descrição mais longa e detalhada dessa familia de produtos. Eu sou uma descrição mais longa e detalhada dessa familia de produtos. Eu sou uma descrição mais longa e detalhada dessa familia de produtos. Eu sou uma descrição mais longa e detalhada dessa familia de produtos. Eu sou uma descrição mais longa e detalhada dessa familia de produtos.",
         "canvaModal": "/familias/ft.pro.crrt-id/canva.png",
         "prodSimModal": {
-            "ft.pro.crrt-id": "R$ 5.000",
-            "ft.pro.crrt-id.sec": "R$ 7.000",
-            "ft.pro.crrt-id.id": "R$ 1.000",
-            "ft.pro.crrt-id.id.imb-cs": "R$ 500",
-            "ft.pro.crrt-id.id.sec": "R$ 100",
-            "ft.pro.crrt-id.jor": "R$ 10.000",
-            "ft.pro.crrt-id.jor.sec": "R$ 4.000"
+            "ft.pro.crrt-id": ["R$1500", "R$200", "R$150", "R$100", "R$400", "R$350", "R$250"],
+            "ft.pro.crrt-id.sec": ["R$2000", "R$250", "R$200", "R$150", "R$500", "R$450", "R$300"],
+            "ft.pro.crrt-id.id": ["R$1000", "R$250", "R$200", "R$150", "R$500", "R$450", "R$300"],
+            "ft.pro.crrt-id.id.imb-cs": ["R$3000", "R$250", "R$200", "R$150", "R$500", "R$450", "R$300"],
+            "ft.pro.crrt-id.id.sec": ["R$200", "R$250", "R$200", "R$150", "R$500", "R$450", "R$300"],
+            "ft.pro.crrt-id.jor": ["R$600", "R$250", "R$200", "R$150", "R$500", "R$450", "R$300"],
+            "ft.pro.crrt-id.jor.sec": ["R$7000", "R$250", "R$200", "R$150", "R$500", "R$450", "R$300"]
         }
     }
 ]

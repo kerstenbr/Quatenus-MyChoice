@@ -104,13 +104,20 @@ function createProductModal(product) {
         // }).join('');
         
         const productsSegments = Object.entries(product.prodSimModal).map(([similarProduct, price]) => {
-            console.log("Produtos similares: " + similarProduct)
+            console.log("Produtos similares: " + similarProduct) // ${similarProduct.toLocaleUpperCase()} ${price[0]}
             return similarProduct ? `
-                <div class="border border-1"> 
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><h6>${similarProduct.toLocaleUpperCase()}</h6> ${price}</li>
-                    </ul>
-                </div>
+                <tbody>
+                    <tr>
+                        <th scope="row">${similarProduct.toLocaleLowerCase()}</th>
+                        <td>${price[0]}</td>
+                        <td>${price[1]}</td>
+                        <td>${price[2]}</td>
+                        <td>${price[3]}</td>
+                        <td>${price[4]}</td>
+                        <td>${price[5]}</td>
+                        <td>${price[6]}</td>
+                    </tr>
+                </tbody>
                 ` : '';
         }).join('');
 
@@ -132,9 +139,33 @@ function createProductModal(product) {
                         <div>
                             <h5 class="mt-3">Segmentos de Produtos</h5>
                         </div>
-                        <div>
-                            <div>${productsSegments}</div>
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Produto</th>
+                                        <th scope="col">Adesão</th>
+                                        <th colspan="3">Com adesão</th>
+                                        <th colspan="3">Sem adesão</th>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+
+                                        <th>12</th>
+                                        <th>24</th>
+                                        <th>36</th>
+
+                                        <th>12</th>
+                                        <th>24</th>
+                                        <th>36</th>
+                                    </tr>
+                                </thead>
+                                ${productsSegments}
+                            </table>
                         </div>
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-qblue" data-bs-dismiss="modal">Fechar</button>
@@ -149,7 +180,7 @@ function createProductModal(product) {
     modal.show();
 
     const closeHandler = () => {
-        document.body.removeEventListener('click', buttonClickHandler);
+        // document.body.removeEventListener('click', buttonClickHandler);
         document.removeEventListener('hidden.bs.modal', closeHandler);
     };
 
@@ -173,7 +204,6 @@ function createProductModal(product) {
     // };
 
     // document.body.addEventListener('click', buttonClickHandler);
-    document.body.addEventListener('click');
     document.addEventListener('hidden.bs.modal', closeHandler);
 
     modalElement.addEventListener('hidden.bs.modal', () => {
