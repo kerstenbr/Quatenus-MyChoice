@@ -108,14 +108,14 @@ function createProductModal(product) {
             return similarProduct ? `
                 <tbody>
                     <tr>
-                        <th scope="row">${similarProduct.toLocaleLowerCase()}</th>
-                        <td>${price[0]}</td>
-                        <td>${price[1]}</td>
-                        <td>${price[2]}</td>
-                        <td>${price[3]}</td>
-                        <td>${price[4]}</td>
-                        <td>${price[5]}</td>
-                        <td>${price[6]}</td>
+                        <th scope="row">${similarProduct.toLocaleUpperCase()}</th>
+                        <td class="text-center">${price[0]}</td>
+                        <td class="text-center">${price[1]}</td>
+                        <td class="text-center">${price[2]}</td>
+                        <td class="text-center">${price[3]}</td>
+                        <td class="text-center">${price[4]}</td>
+                        <td class="text-center">${price[5]}</td>
+                        <td class="text-center">${price[6]}</td>
                     </tr>
                 </tbody>
                 ` : '';
@@ -127,7 +127,7 @@ function createProductModal(product) {
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="${modalId}">${product.nome} - ${product.apelido}</h5>
+                        <h5 class="modal-title" id="${modalId}">${product.nome} - ${product.apelido.toLocaleUpperCase()}</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -141,25 +141,25 @@ function createProductModal(product) {
                         </div>
 
                         <div class="table-responsive">
-                            <table class="table table-bordered">
+                            <table class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
                                         <th scope="col">Produto</th>
-                                        <th scope="col">Adesão</th>
-                                        <th colspan="3">Com adesão</th>
-                                        <th colspan="3">Sem adesão</th>
+                                        <th scope="col" class="text-center">Adesão</th>
+                                        <th colspan="3" class="text-center">Com adesão</th>
+                                        <th colspan="3" class="text-center">Sem adesão</th>
                                     </tr>
                                     <tr>
                                         <th></th>
                                         <th></th>
 
-                                        <th>12</th>
-                                        <th>24</th>
-                                        <th>36</th>
+                                        <th class="text-center">12</th>
+                                        <th class="text-center">24</th>
+                                        <th class="text-center">36</th>
 
-                                        <th>12</th>
-                                        <th>24</th>
-                                        <th>36</th>
+                                        <th class="text-center">12</th>
+                                        <th class="text-center">24</th>
+                                        <th class="text-center">36</th>
                                     </tr>
                                 </thead>
                                 ${productsSegments}
