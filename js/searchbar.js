@@ -127,13 +127,13 @@ function createProductModal(product) {
                                         <th></th>
                                         <th></th>
 
-                                        <th class="text-center">12</th>
-                                        <th class="text-center">24</th>
-                                        <th class="text-center">36</th>
+                                        <th class="text-center">12 meses</th>
+                                        <th class="text-center">24 meses</th>
+                                        <th class="text-center">36 meses</th>
 
-                                        <th class="text-center">12</th>
-                                        <th class="text-center">24</th>
-                                        <th class="text-center">36</th>
+                                        <th class="text-center">12 meses</th>
+                                        <th class="text-center">24 meses</th>
+                                        <th class="text-center">36 meses</th>
                                     </tr>
                                 </thead>
                                 ${productsSegments}
