@@ -98,7 +98,7 @@ function createProductModal(product) {
         }).join('');
 
         modalElement.innerHTML = `
-            <div class="modal-dialog modal-xl">
+            <div class="modal-dialog modal-xl" id="pdfModal">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="${modalId}">${product.nome} - ${product.apelido.toLocaleUpperCase()}</h5>
@@ -147,12 +147,30 @@ function createProductModal(product) {
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-qblue" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-qblue start-0" id="generatePdf">Download PDF</button>
                     </div>
                 </div>
             </div>
         `;
         document.body.appendChild(modalElement);
     }
+
+    // FIXME: EM algumas gerações do pdf, aleatoriamente o pdf corta a primeira imagem e discarta todo o resto do conteudo e gera uma página em branco no lugar.
+    const btnDownloadPdf = document.getElementById("generatePdf")
+    btnDownloadPdf.addEventListener("click", () => {
+        const content = document.getElementById("pdfModal")
+
+        const options = {
+            margin: [10, 10 , 10, 10],
+            filename: "teste.pdf",
+            html2canvas: { scale: 3 },
+            // pagebreak: "avoid-all",
+            image: { type: 'png', quality: 1.00 },
+            jsPDF: { unit: "mm", format: "a4", orientation: 'landscape'}
+        }
+
+        html2pdf().set(options).from(content).save()
+    })
 
     const modal = new bootstrap.Modal(modalElement);
     modal.show();
